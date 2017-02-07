@@ -1,12 +1,12 @@
 clear;
 close all;
-load_imges;
+load_images;
 
 
 len = length(filename);
 filt_img = cell(len,1);
 for i = 1:len
-    filt_img{i} = processing_idv(img{i},0.1);
+    filt_img{i} = edgedetect_idv(img{i},0.1);
 end
 
 filt_img{1} = torgb(filt_img{1},'r');
