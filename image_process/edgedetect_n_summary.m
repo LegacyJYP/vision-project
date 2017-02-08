@@ -3,7 +3,6 @@ close all;
 load_images;
 
 
-len = length(filename);
 filt_img = cell(len,1);
 for i = 1:len
     filt_img{i} = edgedetect_idv(img{i},0.1);

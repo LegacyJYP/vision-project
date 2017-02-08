@@ -1,3 +1,4 @@
+%function segmentation(w,f1,tform)
 close all;
 clear;
 addpath(genpath('.'));
@@ -11,7 +12,8 @@ f1 = img{1};
 w = img{2};
 f2 = img{3};
 
-tform = registeration(w,f1);
-show_with(w,f1,tform);
+%tform_f1 = registeration(w,f1);
+[gw g1] = registeration_newimage(w,f1);
+show_with(g1,gw);
 
-%figure;%visreg(w,f1,tform);
+%edge detect? ???
