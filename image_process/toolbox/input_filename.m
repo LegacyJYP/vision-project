@@ -4,7 +4,9 @@ filename= {%'ch02 Rup ch1';
 %'ch02 Lup ch1';
 'ch01 Rup ch1';
 'ch01 normal ch1';
-'ch01 Lup ch1'};
+'ch01 Lup ch1';
+'ch01 normal ch1_prev';
+'ch01 Rup ch1_prev'};
 
 ext = '.png';
 

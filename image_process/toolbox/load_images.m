@@ -11,7 +11,7 @@ end
 img = togray(img);
 
 % crop
-img = crop(img);
+%img = crop(img);
 
 % normalize
 if isa(img{1},'uint8')
