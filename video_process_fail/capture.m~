@@ -1,0 +1,13 @@
+filename = 'ch02 Rup ch1.mpg';
+video = loadvideo(filename,5,10);
+
+i=5;
+
+[video,i] = nxt(video,i);
+[video,i] = nxt(video,i);
+[video,i] = nxt(video,i);
+[video,i] = nxt(video,i);
+[video,i] = nxt(video,i);
+%[video,i] = prv(video,i);
+
+%113 127
