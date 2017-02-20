@@ -1,7 +1,9 @@
 clear;
 close all;
-load_images;
 
+addpath(genpath('.'));
+addpath('../png_sample/');
+load_images;
 
 filt_img = cell(len,1);
 for i = 1:len

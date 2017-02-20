@@ -13,6 +13,6 @@ f2 = img{3};
 
 tform = registeration(w,f1);
 show_with(w,f1,tform);
-%show_with(img{4},img{5});
+show_with(img{4},img{5});
 
 %figure;%visreg(w,f1,tform);

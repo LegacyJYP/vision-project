@@ -10,13 +10,10 @@ end
 %gray
 img = togray(img);
 
-% crop
-%img = crop(img);
-
 % normalize
 if isa(img{1},'uint8')
     img=todouble(img);
 end
 
 % visualize
-show(img);
+% show(img);

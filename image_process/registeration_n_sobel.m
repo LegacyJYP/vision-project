@@ -25,6 +25,6 @@ end
 % filt_img{2} = torgb(filt_img{2},'g');
 % filt_img{3} = torgb(filt_img{3},'b');
 
-show_with(filt_img{2},filt_img{1},tform);
+%show_with(filt_img{2},filt_img{1},tform);
 
-%figure;%visreg(w,f1,tform);
+figure;%visreg(w,f1,tform);
