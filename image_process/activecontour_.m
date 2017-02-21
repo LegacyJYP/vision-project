@@ -36,3 +36,5 @@ hold on;
 contour(seg,'r','linewidth',1);
 hold off;
 title('The image with the segmentation shown in red');
+
+imwrite(seg,'segmented.png');
