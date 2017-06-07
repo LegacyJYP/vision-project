@@ -18,6 +18,7 @@ rad = 15;
 [seg] = activecontour(img,mask,iterations);
 
 % display results
+figure;
 subplot(2,2,1)
 imagesc(img); axis image; colormap gray;
 title('The original image');

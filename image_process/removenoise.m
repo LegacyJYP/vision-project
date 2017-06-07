@@ -31,7 +31,7 @@ subplot(2,1,1);
 imshow(seg_g1);
 subplot(2,1,2);
 imshow(sob);
-
+imwrite(seg_g1,'segmented_raw.png')
 %%
 seg_g1 = histeq(seg_g1);
 figure;

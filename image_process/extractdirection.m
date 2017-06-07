@@ -1,6 +1,6 @@
  % 170221 Tuesday
 % 
-close all;
+%close all;
 clear;
 addpath(genpath('.'));
 addpath('../png_sample/');
@@ -25,11 +25,12 @@ seg = imread('segmented.png');
 
 %% fft
 
-img = zeros(1000,1000);
-img(400:600,200:800)=1;
-seg = img;
+%img = zeros(1000,1000);
+%img(400:600,200:800)=1;
+%seg = img;
+figure;
 imshow(seg);
-seg = imread('chromosome.png');
+%seg = imread('chromosome.png');
 
 degsum = [];
 for deg = 1:180
@@ -62,8 +63,8 @@ for i = 0:(xsiz-xmid)
     if ceil(i*sin(rad)<=ylim)
         y = ceil(i*sin(rad))+ymid;
         x = i+xmid;
-        %hold on;
-        %plot(x,(ysiz-y),'r--o');
+        hold on;
+        plot(x,(ysiz-y),'r--o');
         
         
         sum = sum + a(y,x);
